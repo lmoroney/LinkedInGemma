@@ -1,0 +1,1 @@
+curl -X POST http://localhost:11434/api/generate -d '{"model": "gemma3:latest", "prompt": "Why is the sky blue?", "stream": false}'

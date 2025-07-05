@@ -1,0 +1,19 @@
+LAURENCE says: The first tool that we'll create for our agent is the web search tool. This tool will allow our agent to search the web for information.
+
+You'll implement it in the search_web method here: (use concierge_agent_step1.py)
+
+There's an API called SERPER that we'll use for this. You can find it at: serper.dev, and sign up for an API key there. The API key should be an environment variable on your system. Check your operating system docs for how to do it. 
+
+I get the API key from the environment here.
+
+Now let's fill out the search_web method with code.
+
+(Copy from concierge_agent_step2.py)
+
+We'll use the `requests` library to send a search query to the search engine and get back a list of results -- a set of URLs for sites that match the query. 
+
+We'll also add some error handling to make sure that our agent can handle cases where the search fails.
+
+Now that we have the search tool implemented, we'll need to hook it up to our agent by adding it to the list of available tools that we'll make use of. We'll see that a little later. For now, let's continue looking at the tools.
+
+In the next video, we'll create the browse tool.

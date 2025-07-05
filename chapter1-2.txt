@@ -1,0 +1,19 @@
+LAURENCE says: Before we can start building our agent, we need to get our development environment set up. We'll need a few things: Python, the Transformers library, and Ollama.
+
+First, you'll need to have Python installed. If you don't already have it, you can download it from the official Python website. 
+
+I would also recommend using a python virtual environment with venv. I won't go into details on how to set that up -- you can find the documentation online. 
+
+[python3 -m venv gemma-env]
+
+[source gemma-env/bin/activate]
+
+I'll also provide -- in the repo -- the Python dependencies that you'll need to be able to run this. 
+
+You can just install them with this command:
+
+[Show typing pip install -r requirements.txt]
+
+Finally, we'll need to install Ollama. Ollama is a tool that allows us to run large language models like Gemma 3 on our local machine. You can download Ollama from the official website.
+
+Once you have all of these installed, you'll be ready to start building. In the next video, we'll take a closer look at Ollama.

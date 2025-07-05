@@ -1,0 +1,16 @@
+LAURENCE says: Hey everyone, and welcome! I'm so excited to have you here with me to learn about building a local, private agent with Gemma 3. 
+
+Over the next little while, you're going to learn not just what an AI agent is, but you'll build one for yourself. We'll write the code step-by-step and by the end you'll have a working application that can do your bidding. It's a concierge agent that you can ask to find things for you, and it will use AI to understand your request, to use tools to find the information, and then to report back to you.
+
+Let's take a look at the finished application. 
+
+(Demo running the agent in terminal)
+
+And here's a quick look at the main function -- where everything is called in order:
+[Show code from concierge_agent.py -- from __main__]
+
+I can run it from the command line, and it will ask me what I want. I'm going to ask it to find me the best japanese restaurants in my neighborhood. It will then go off and search the web, read the results, and then come back to me with a summary of what it found. And, it will even email me the results.
+
+This is just a simple example, but it's a powerful one. By the end of this course, you'll have the skills to build your own agents that can do all sorts of things. 
+
+So, let's get started!

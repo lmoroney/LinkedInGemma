@@ -1,0 +1,13 @@
+LAURENCE says: Alright, it's time to start building our concierge agent! In this chapter, we're going to put all of the pieces together that we've learned about so far.
+
+(Show a flowchart of the application architecture)[Chapter2-2.mermaid will do]
+
+We'll start by creating a new Python file called `concierge_agent.py`. In this file, we'll define the main function that will drive our agent. This function will take the user's request as input and then execute the agentic workflow.
+
+[Show code from concierge_agent_step1.py -- The main function]
+
+Next, we'll stub out the functions for each step in the workflow.
+
+We'll also define the tools that our agent will use: `search`, `browse`, and `email`.
+
+In the next few videos, we'll fill in the details for each of these functions and get our agent up and running.

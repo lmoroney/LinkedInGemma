@@ -1,0 +1,27 @@
+LAURENCE says: The third and final step in the agentic workflow is to reflect on the results of the execution step. This is where the agent gets the results of teh previous steps and processes them to decide on the next step.
+
+A really advanced agent could be more autonomous here -- making decisions about what to do next. 
+
+In our case, for simplicity, we'll always just ask the agent to process the results into the format that's needed for the next step. 
+
+So, in a nutshell -- reflection is understanding the context and data from our current point in the workflow, and both deciding on the next step, and transforming teh data to be easy to use in the next step.
+
+We do that here
+
+[Explore Prompt 1 and then pivot ]
+
+In our concierge agent, there are several examples -- the first is in our first prompt we send to Gemma 3
+
+Take a look at the users prompt and turn that into the best, simple search query.
+
+They're passed to the web search tool
+
+THe results from this are then reprompted:
+
+[Exlplore prompt 2 and pivot]
+Where we ask to analyze the search results and find the most promising URLs from them. Good reflection on the results there. These will then be turned into a list of URLs that will be used by the next tool
+
+
+We'll ask Gemma to analyze this information and decide what to do next. The agent might have successfully completed the task, encountered an error, or need more information. The reflection step is what makes our agent "intelligent".
+
+In the next chapter, we'll start putting all of these pieces together and build our concierge agent from scratch.

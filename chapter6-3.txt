@@ -1,0 +1,11 @@
+LAURENCE says: Now that we have a text description of the image, we need to integrate it into our agentic workflow. We can do this by updating the `plan` function to take the image description as an additional input.
+
+(Show a diagram of the updated agentic workflow)
+
+The updated `plan` function will now take both the user's text request and the image description as input. It will then use Gemma 3 to generate a plan that takes both of these inputs into account.
+
+[Show code from concierge_agent_multimodal.py -- The updated plan function]
+
+For example, if the user drags an image of sushi onto the terminal and asks "where can I get this?", the agent is now able to use the information from the image to generate a more relevant and useful plan.
+
+In the next video, we'll look at how we can tweak the prompt to further refine the performance of our multi-modal agent.

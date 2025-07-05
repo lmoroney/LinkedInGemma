@@ -1,0 +1,11 @@
+LAURENCE says: The final prompt in our agent is the one that decides whether or not to email the results to the user. This is a great example of how we can use Gemma 3 as a decision-making engine.
+
+(Show a diagram of the decision-making process)
+
+This prompt takes the user's original request and the summarized results as input and asks Gemma 3 to make a simple "yes" or "no" decision. We'll also ask it to generate a new email from the summarized results if the decision is "yes".
+
+[Show code from concierge_agent.py -- The email decision prompt]
+
+This is a powerful technique that can be used to add a layer of intelligence to any application.
+
+In the next chapter, we'll recap the entire agentic workflow and then finish up the code for our concierge agent.

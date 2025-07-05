@@ -1,0 +1,21 @@
+LAURENCE says: The next tool that we'll create for our agent is the browse tool. This tool will allow our agent to browse a specific website and extract its contents.
+
+Previously we saw the tool that the agent could use to get a list of web sites. It will decide on the best ones, and then pass them to this site one by one.
+
+Let's look at the function:
+
+(go to browse_website in concierge_agent_step2.py)
+
+We'll use the `requests` library again to download the HTML of a website. Then, we'll use the `BeautifulSoup` library to parse the HTML and extract the text.
+
+[Show code from concierge_agent_step2.py -- The browse tool]
+
+The `browse` function takes a URL as an argument and returns the text content of the page. 
+
+Let's implement this (talk through adding code from concierge_agent_step3.py)
+
+We'll also add some error handling to make sure that our agent can handle cases where the website is unavailable.
+
+Once we have the browse tool implemented, it's ready for the agent to use. We'll implement that in the run_concierge_agent method later.
+
+In the next video, we'll create the email tool.

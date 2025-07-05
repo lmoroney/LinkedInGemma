@@ -1,0 +1,9 @@
+LAURENCE says: So far, our agent has only been able to understand and process text. But what if we could give it the power of sight? In this chapter, we're going to explore the multi-modal capabilities of Gemma 3.
+
+(Show a demonstration of the multi-modal agent in action, with an image of sushi being dragged onto the terminal)
+
+As you can see, I can now drag an image of food onto the terminal, and our agent is able to identify the food and find information about it.
+
+We'll be using the `concierge_agent_multimodal.py` file for this chapter.
+
+In the next few videos, we'll dive into the code and see how we can use Gemma 3 to interpret the contents of an image and integrate that information into our agentic workflow.

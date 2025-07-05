@@ -1,0 +1,23 @@
+LAURENCE says: Now that we have our environment set up, let's take a closer look at Ollama. Ollama is a tool that allows us to run large language models like Gemma 3 on our local machine.
+
+(Navigate to Ollama website and show it)
+
+Ollama provides a server that we can use to interact with our language model. We can send it a prompt, and it will return the model's response.
+
+To get started, we first need to download the Gemma 3 model. We can do this from the command line using the `ollama pull` command.
+
+(Navigate to: https://ollama.com/library/gemma3)
+
+[Show the command: ollama pull gemma:4b]
+
+Once the model is downloaded, we can start the Ollama server.
+
+[Show the command: ollama serve]
+
+Now that the server is running, we can send it a request. 
+
+curl -X POST http://localhost:11434/api/generate -d '{"model": "gemma3:latest", "prompt": "Why is the sky blue?", "stream": false}'
+
+It will take a moment, but we'll see the response. 
+
+In the next video, we'll write our first Python script to interact with the Ollama server.

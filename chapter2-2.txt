@@ -1,0 +1,19 @@
+LAURENCE says: The first step in the agentic workflow is to create a plan. This is where the agent takes the user's request and turns it into a series of actions that it can take to fulfill that request.
+
+(Show a diagram of the  process)[Chapter2-2.mermaid]
+
+In our concierge agent, we're following a static workflow where the processing is handled by Gemma 3. 
+
+The user will give the agent a request, and we'll give Gemma a prompt that describes the user's request, and we'll ask it to perform the first step of the plan -- to search the web for results.
+
+[Show code from concierge_agent.py -- The prompt for generating the plan -- it's currently called prompt1]
+
+For example, if the user asks our agent to "find the best japanese restaurants in my neighborhood", Gemma will be prompted like this, and come up with a tool use plan for the results like this:
+
+[Show Debug print of the plan]
+
+This will be the first step of the agentic flow you can see here. [Chapter2-2.mermaid]
+
+This plan gets broken down into a set of steps, where we are either having Gemma aritificially understand the data on our behalf, or using the tools to get further data. 
+
+In the next video, we'll take a look the tools that it uses.

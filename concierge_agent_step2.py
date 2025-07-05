@@ -1,0 +1,99 @@
+# concierge_agent.py
+# A terminal-based AI agent that acts as a local concierge.
+# It uses a local Gemma model served by Ollama for reasoning and external tools for web search and browsing.
+# This version includes conversation history, robust multi-site browsing, and an email tool.
+
+import os
+import requests
+from bs4 import BeautifulSoup
+import json
+import smtplib
+from email.message import EmailMessage
+
+# --- Configuration ---
+# It's highly recommended to set these as environment variables for security.
+# You can get a free Serper API key from https://serper.dev
+SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
+
+# Ollama configuration
+OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "gemma3:latest") # Assumes you have pulled a gemma3 model
+
+# SMTP Configuration for the email tool
+SMTP_SERVER = os.environ.get("SMTP_SERVER")
+SMTP_PORT = int(os.environ.get("SMTP_PORT", 465)) # Default to 465 for SSL
+SMTP_USERNAME = os.environ.get("SMTP_USERNAME")
+SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD")
+
+
+# --- Part 1: Defining the Agent's Tools ---
+
+def search_web(query: str) -> str:
+    """
+    Uses the Serper.dev API to perform a web search.
+    Returns a formatted string of search results.
+    """
+    print(f"--- Tool: Searching web for '{query}' ---")
+    if not SERPER_API_KEY:
+        print("--- DEBUG: SERPER_API_KEY is not set. ---")
+        return "Error: SERPER_API_KEY is not set. Cannot perform web search."
+    
+    print(f"--- DEBUG: Using SERPER_API_KEY ending in '...{SERPER_API_KEY[-4:]}' ---")
+
+    payload = json.dumps({"q": query})
+    headers = {'X-API-KEY': SERPER_API_KEY, 'Content-Type': 'application/json'}
+    
+    try:
+        response = requests.post("https://google.serper.dev/search", headers=headers, data=payload)
+        print(f"--- DEBUG: Serper API response status code: {response.status_code} ---")
+        print(f"--- DEBUG: Serper API response text: {response.text[:500]} ... ---")
+        response.raise_for_status()
+        results = response.json()
+        
+        if not results.get("organic"):
+            return "No good search results found."
+            
+        output = "Search Results:\n"
+        for item in results["organic"][:5]: # Get top 5 results
+            output += f"- Title: {item.get('title', 'N/A')}\n"
+            output += f"  Link: {item.get('link', 'N/A')}\n"
+            output += f"  Snippet: {item.get('snippet', 'N/A')}\n\n"
+        return output
+        
+    except requests.exceptions.RequestException as e:
+        return f"Error during web search: {e}"
+
+def browse_website(url: str) -> str:
+    pass
+
+def send_email(to_address: str, subject: str, body: str) -> str:
+    pass
+
+# --- Part 2: The Agent's "Brain" (Ollama Interaction) ---
+
+def call_gemma_ollama(prompt: str, output_format: str = "json") -> str:
+    pass
+
+
+# --- Part 3: The Agentic Chain Logic with Memory and Robustness ---
+
+def run_concierge_agent(goal: str, history: list) -> str:
+    # 1: Extract email address from the goal if it exists
+    # 2. Decide what to search for
+    # 3. Search the web
+    # 4. Choose which sites to browse
+    # 5. Browse the websites and collect information
+    # 6. Summarize everything for the user
+    # 7. Decide if an email should be sent and generate its content
+    pass
+
+
+# --- Part 4: The Terminal Interface ---
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+
+# Force a new commit by adding a comment

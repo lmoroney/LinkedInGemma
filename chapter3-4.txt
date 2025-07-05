@@ -1,0 +1,20 @@
+LAURENCE says: The final tool that we'll create for our agent is the email tool. This tool will allow our agent to send an email to the user with a summary of its findings.
+
+Here's the method 
+
+(show concierge_agent_step3.py)
+
+
+We'll use the `smtplib` library to send the email. You'll need to have an SMTP server configured for this to work. Most internet providers will give you one. The server, port, username and password are defined as environment variables so as not to share them when the code is put in a repo.
+
+LEt's implement the method now)
+
+(use code from concierge_agent_step4.py)
+
+The `email` function takes a recipient, a subject, and a body as arguments. It then connects to the SMTP server and sends the email.
+
+HEre we'll construct the email. 
+
+Then we'll use smtplib to connect to the server, and if once connected call its sendmessage with our email. It's that easy!
+
+Now that we have all of our tools in place, we're ready to move on to the next chapter, where we'll focus on prompt engineering to get the agent to intelligently use all these tools!

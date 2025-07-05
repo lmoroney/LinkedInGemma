@@ -1,0 +1,16 @@
+LAURENCE says: The first and perhaps most important prompt in our agent is the one that we use to understand the user's initial intent. This prompt takes the user's raw text input and turns it into a structured plan that our agent can execute.
+
+
+[Open concierge_agent_step4.py, and continue from earlier.]
+
+The key to a good intent parsing prompt is to provide Gemma 3 with a clear and concise description of what exactly we want it to do. We'll also track the conversation history to keep the context strong. 
+
+[Paste in prompt code] 
+
+The user's goal is stated in goal.
+
+Now we can call gemma with this prompt using the call_gemme_ollama helper function, which works the same was as we saw earlier.
+
+The results of this are in the search_query list. We can now use the search_web tool to search the web for those results, and print them out to help with debugging.
+
+By carefully crafting this prompt, we can ensure that our agent is able to understand a wide variety of user requests. In the next video, we'll look at the prompt for parsing the results of the web search.

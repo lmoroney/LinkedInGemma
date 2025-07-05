@@ -1,0 +1,13 @@
+LAURENCE says: Alright, it's time to write our first "Hello World" application with Gemma 3! We're going to write a simple Python script that sends a prompt to the Ollama server and prints the response.
+
+[Show the code from ollama_test.py - and run it]
+
+As you can see, it's a pretty simple script. We're using the `requests` library to send a POST request to the Ollama server. The prompt is "Why is the sky blue!".
+
+Let's run this script and see what happens.
+
+[Show the output of the script]
+
+As you can see, the model has responded with lots of great information. This is just a simple example, but it shows how easy it is to get started with Gemma 3 and Ollama.
+
+In the next chapter, we'll start building our concierge agent. This is where the real fun begins!

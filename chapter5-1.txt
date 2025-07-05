@@ -1,0 +1,13 @@
+LAURENCE says: We've covered a lot of ground in this course. We've learned about Gemma 3, Ollama, and the agentic workflow. We've also built a set of tools that our agent can use to interact with the world.
+
+(Show a diagram of the complete application architecture)
+
+Let's take a moment to recap the entire flow of our application.
+
+1.  The user's request comes in and is processed by the `plan` function.
+2.  The `execute` function carries out the commands from the plan, using our tools.
+3.  The `reflect` function uses Gemma 3 to analyze the results and generate a final response.
+
+This is a powerful and flexible architecture that can be used to build a wide variety of agents.
+
+In the next video, we'll finish up the code for our concierge agent and see it in action.

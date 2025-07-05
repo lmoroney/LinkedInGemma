@@ -1,0 +1,16 @@
+LAURENCE says: Once our agent has a list of websites to visit, it needs to be able to parse the content of those websites and extract the relevant information. This is where the next prompt comes in.
+
+(Open Concierge_agent_step3--add the second prompt. Call Ollama with it)
+
+The previous step gave us a list of URLs, but we want to be intelligent about the ones we use, so Gemma will reflect on them to come up with a condensed set that looks closer to the user's goals.
+
+We pass it to gemma, and get the response.
+
+We can now work with that list of URLS.
+
+Earlier we created the tool to browse websites. 
+
+So let's go through our list of sites, one by one, and browse them. We'll aggregate the text we get back from them. We can use that in the next step!
+
+This is a relatively simple prompt, but it's a very important one. The quality of the text that we extract from the websites will have a big impact on the quality of the final summary that our agent generates.
+

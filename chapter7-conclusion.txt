@@ -1,0 +1,7 @@
+LAURENCE says: And that's a wrap! We've covered a huge amount of ground in this course. We've learned about Gemma 3, Ollama, and the agentic workflow. We've built a powerful concierge agent that can search the web, browse websites, and send emails. And we've even extended our agent to be multi-modal.
+
+(Show a montage of the key concepts and projects covered in the course)
+
+I hope you've enjoyed this journey as much as I have. The world of AI is moving at an incredible pace, and I'm so excited to see what you'll build with the skills that you've learned in this course.
+
+The future is in your hands. Go out there and build something amazing!

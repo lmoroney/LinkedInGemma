@@ -1,0 +1,15 @@
+LAURENCE says: Alright, it's time to finish up the code for our concierge agent and see it in action! We've built all of the individual components, and now it's time to put them all together.
+
+[Show code from concierge_agent.py -- The complete code]
+
+We'll start by filling in the details for the `run_agent` function. This function will orchestrate the entire agentic workflow.
+
+Next, we'll add the code to handle the command-line arguments.
+
+And that's it! Our concierge agent is complete. Let's run it and see what it can do.
+
+[Show the agent running and responding to a request]
+
+As you can see, our agent is able to understand our request, search the web for information, and provide us with a summary of its findings.
+
+In the next chapter, we'll explore how we can extend our agent to be multi-modal.

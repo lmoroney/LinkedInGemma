@@ -1,0 +1,23 @@
+LAURENCE says: Now that we have the basic architecture of our agent in place, let's recap how everything works together.
+
+(Show a diagram of the application architecture, highlighting the flow of data)[Chapter2-2.mermaid]
+
+The user's request comes in and is first processed by the `plan` part of the pattern where it is parsed for intent. 
+
+This function uses Gemma 3 to generate a search query.
+
+THe serach query is executed using the search web tool. 
+
+Gemma 3 then reflects on the results, and derives a list of 'good urls'
+
+The agent then takes action by browsing the sites and gleaning information from them.
+
+Gemma 3 reflects of these results, summarizing them for useful content that matches the users intent
+
+And if appropriate that summary is emailed to the user.
+
+Planning. Executing. Reflecting. The three steps of an agentic workflow. 
+
+The key to making this workflow truly intelligent is the prompt engineering that we use to interact with Gemma 3.
+
+In the next few videos, we'll dive deep into the prompts that we're using for each step of the workflow.

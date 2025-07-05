@@ -1,0 +1,13 @@
+LAURENCE says: The second step in the agentic workflow is to execute the plan. This is where the agent takes the commands that it generated in the planning step and carries them out one by one.
+
+(Show a diagram of the execution process)[Chapter2-2.mermaid]
+
+Our concierge agent has three tools at its disposal: Web Search, Browse, and Email.
+
+[Show code from concierge_agent.py -- The tool definitions]
+
+Each of these tools is a simple Python function that takes some arguments and returns a result. For example, the `search` tool takes a query as an argument and returns a list of search results.
+
+Our agent will loop through the commands in its plan and call the appropriate tool for each command. The results of each tool are then stored in a list, which will be used in the next step of the workflow.
+
+In the next video, we'll take a look at the reflection step.

@@ -1,0 +1,11 @@
+LAURENCE says: So, what is Gemma 3? You can think of it as the brains of our operation. It's a new, open-source AI model from Google that we can run locally on our own machines. This is a big deal, because it means we can build AI applications that are completely private. Our data never has to leave our computer.
+
+(Show a slide with the Gemma 3 Logo)
+
+Gemma 3 is a large language model, or LLM. This means it's been trained on a massive amount of text and code, and it can understand and generate human-like text. It can also be used for a variety of other tasks, like translation, summarization, and question answering.
+
+In this course, we're going to be using Gemma 3 to power our concierge agent. We'll use it to understand the user's request, to generate a plan for how to fulfill that request, and to process the results of the tools that our agent uses.
+
+But Gemma 3 is more than just a text-based model. It's also multi-modal, which means it can understand and process images as well. We'll explore this a little later.
+
+This is an exciting time to be a developer. With models like Gemma 3, we have the power to build amazing things. So let's dive in!
