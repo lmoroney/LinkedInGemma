@@ -1,7 +1,5 @@
 LAURENCE says: The first step in making our agent multi-modal is to teach it how to interpret the contents of an image. We can do this by using the multi-modal capabilities of Gemma 3.
 
-(Show a diagram of the image interpretation process)
-
 We'll send the image to Gemma 3 along with a prompt that asks it to describe the image. Gemma will then return a text description of the image.
 
 [Show code from concierge_agent_multimodal.py -- The image interpretation prompt]

@@ -1,9 +1,13 @@
-LAURENCE says: We've successfully integrated multi-modal capabilities into our agent, but there's always room for improvement. In this video, we'll explore how we can tweak the prompt to refine the performance of our agent.
+LAURENCE says: We've successfully integrated multi-modal capabilities into our agent, but there's always room for improvement. Particularly when a lot of your code is based on prompting.
 
-(Show a diagram of the prompt refinement process)
+I have found that using an LLM to make prompts to other LLMs more efficient is a very effective way of experimenting
 
-One way to improve the performance of our agent is to provide Gemma 3 with more context about the user's request. We can also use the prompt to ask Gemma to perform more complex reasoning tasks.
+So, I worked with Gemini with a prompt like this:
 
-[Show code from concierge_agent_multimodal.py -- An example of a more advanced prompt]
+>>can you now look at concierge_agent_multimodal.py and suggest improvements to tweak the various prompts to improve performance. Output your recommendations to a new concierge_agent_multimodal_tweaks.py
+
+And the results I got looked like this:
+
+(Use FileMerge to show them and discuss more advanced prompting -- in particular encourage them to test and experiment constantly)
 
 By experimenting with different prompts, we can unlock the full potential of Gemma 3 and create agents that are truly amazing. The only limit is your imagination!

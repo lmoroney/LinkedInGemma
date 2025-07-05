@@ -2,9 +2,9 @@ LAURENCE says: The third and final step in the agentic workflow is to reflect on
 
 A really advanced agent could be more autonomous here -- making decisions about what to do next. 
 
-In our case, for simplicity, we'll always just ask the agent to process the results into the format that's needed for the next step. 
+In our case, in the early steps, I have the agent just follow a linear flow without any autonomy -- it searches the web for us for results, it then browses those results and generates a summary. Based on the outcome of that work, it will then autonomously decide whether or not to send an email with the results. I'm considering the email to be the most expensive part of the system -- so introducing the autonomy there in order to make the agent cost-effective and less spammy! 
 
-So, in a nutshell -- reflection is understanding the context and data from our current point in the workflow, and both deciding on the next step, and transforming teh data to be easy to use in the next step.
+So, in a nutshell -- reflection is understanding the context and data from our current point in the workflow, and both deciding on the next step, and transforming teh data to be easy to use in the next step, as well as making decisions on what to do next.
 
 We do that here
 

@@ -4,7 +4,7 @@ LAURENCE says: So, what exactly is an agent? In the context of AI, an agent is a
 
 You can think of an agent as a little robot that lives inside your computer. You give it a task, and it goes off and does it for you. It can use tools to help it along the way, and it can learn from its experiences to get better over time.
 
-In this chapter, we're going to build a simple agent that can search the web for something you need, browse the websites it finds to glean information from them, it will then summarize the relevant information, and send you an email with the summary. 
+In this chapter, we're going to build a simple agent that can search the web for something you need, browse the websites it finds to glean information from them, it will then summarize the relevant information, and send you an email with the summary -- if it decides that the relatively expensive action of sending an email is appropriate! 
 
 We'll break down the agentic workflow into three main steps: Plan, Execute, and Reflect.
 

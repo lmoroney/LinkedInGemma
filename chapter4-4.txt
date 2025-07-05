@@ -1,11 +1,9 @@
 LAURENCE says: After our agent has gathered information from multiple websites, it needs to be able to aggregate, summarize, and fact-check the results.
 
-[[[[Start at prompt 3]]]]
+[Open concierge_agent_step5.py and paste in step 5 (prompt 3) onwards 
 
 This prompt takes a list of text snippets from different websites as input and asks Gemma 3 to perform several tasks: Aggregate, Summarize, and Fact-check.
 
-[Show code from concierge_agent.py -- The aggregation and summarization prompt]
-
-This is a complex prompt, but it's one that Gemma 3 is well-suited for. By asking Gemma to perform these tasks, we can ensure that the final response that our agent provides is accurate and comprehensive.
+This is a complex prompt, but it's one that Gemma 3 is well-suited for. By asking Gemma to perform these tasks, we can ensure that the final response that our agent provides is accurate and comprehensive. [Zero in on the fact check part of it and discuss (lines 265 onwards 'Fact check and synthesize')]
 
 In the next video, we'll look at the final prompt in our agent, which is the one that decides whether or not to email the results to the user.

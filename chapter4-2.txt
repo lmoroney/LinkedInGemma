@@ -1,7 +1,23 @@
+
+
+
 LAURENCE says: The first and perhaps most important prompt in our agent is the one that we use to understand the user's initial intent. This prompt takes the user's raw text input and turns it into a structured plan that our agent can execute.
 
+Before we get started with the planning, I found one thing to do was to write a little tool with Gemma that extracts an email address from the user's intent. That way if the agent is going to email the results, they have the destination address already. 
 
-[Open concierge_agent_step4.py, and continue from earlier.]
+[Open concierge_agent_step6.py]
+
+So I'm goign to do that with a prompt like this --
+
+[Paste in lines (160-183 from concierge_agent.py]
+
+-- where I extract the email. I will pass this to call_gemma_ollama to get the results. 
+
+But by now, if there was an email address in the original intent, I have access to it, and it's in the recipient_email_from_goal.
+
+Next up, we're going to get down with the user's intent and Gemma will figure out how to search the web from that!
+
+[Open concierge_agent_step6.py, and continue from earlier.]
 
 The key to a good intent parsing prompt is to provide Gemma 3 with a clear and concise description of what exactly we want it to do. We'll also track the conversation history to keep the context strong. 
 

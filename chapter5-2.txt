@@ -1,10 +1,19 @@
 LAURENCE says: Alright, it's time to finish up the code for our concierge agent and see it in action! We've built all of the individual components, and now it's time to put them all together.
 
-[Show code from concierge_agent.py -- The complete code]
+[Show code from concierge_agent_step6.py -- The complete code]
 
-We'll start by filling in the details for the `run_agent` function. This function will orchestrate the entire agentic workflow.
+Previously we finished the run_concierge_agent method which did all the heavy lifting and orchestrated the workflow.
 
-Next, we'll add the code to handle the command-line arguments.
+Next, we'll implement the main function -- 
+
+here' I'll error check if the serper_api_key is set or not. 
+
+Then I'll implement a friendly welcome message.
+
+Note that in all of the prompts were were keeping the conversation history so we could do follow-up prompts, so I want to track that.
+
+ANd now my main look -- what does the user want, run the agent, update the history!
+
 
 And that's it! Our concierge agent is complete. Let's run it and see what it can do.
 

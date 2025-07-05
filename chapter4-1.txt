@@ -20,4 +20,20 @@ Planning. Executing. Reflecting. The three steps of an agentic workflow.
 
 The key to making this workflow truly intelligent is the prompt engineering that we use to interact with Gemma 3.
 
-In the next few videos, we'll dive deep into the prompts that we're using for each step of the workflow.
+Let's now explore the code that makes this possible -- and it's the call_gemma_ollama function.
+
+(show this in concierge_agent_step4.py -- and we'll add content from concierge_agent_step5.py)
+
+THis helper function will operate the same way as the hello world we did earlier.
+
+It accepts a prompt, and a defined output formet.
+
+We'll first define the payload we want to send to ollama. And we already set the payload format to be json.
+
+Now, we'll use requests.post to send that to our ollama host, and get the result.
+
+I'll add a little error handling -- checking on a timeout, a request exception, and an error in the returned JSON. 
+
+This could be made a lot more robust, but for the tutorial, I think it's good!
+
+In the next few videos, we'll dive deep into the prompts that we're using for each step of the workflow -- with this function doing the heavy lifting of executing them with ollama

@@ -1,6 +1,6 @@
 LAURENCE says: Once our agent has a list of websites to visit, it needs to be able to parse the content of those websites and extract the relevant information. This is where the next prompt comes in.
 
-(Open Concierge_agent_step3--add the second prompt. Call Ollama with it)
+(Open Concierge_agent_step5--add prompt2 (line 205). Call Ollama with it)
 
 The previous step gave us a list of URLs, but we want to be intelligent about the ones we use, so Gemma will reflect on them to come up with a condensed set that looks closer to the user's goals.
 

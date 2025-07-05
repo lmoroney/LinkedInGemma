@@ -1,12 +1,16 @@
 LAURENCE says: We've covered a lot of ground in this course. We've learned about Gemma 3, Ollama, and the agentic workflow. We've also built a set of tools that our agent can use to interact with the world.
 
-(Show a diagram of the complete application architecture)
+(Show a diagram of the complete application architecture)[Chapter2-2.mermaid]
 
 Let's take a moment to recap the entire flow of our application.
 
-1.  The user's request comes in and is processed by the `plan` function.
-2.  The `execute` function carries out the commands from the plan, using our tools.
-3.  The `reflect` function uses Gemma 3 to analyze the results and generate a final response.
+Through the lens of plan/execute/reflect, we can see how this agent is a workflow through multiple processes.
+
+Starting with the user's intent. Gemma begins the process of planning what to do with it -- getting their intent, and whether or not there was an email address in there. It then executed a web search to get results. It then reflected on those results for appropriateness before the next step.
+
+Where it planned what to do with those results -- filtering them for appropriateness before taking the action of browsing the sites, and reflecting on the results, again filtering for appropriateness, and fact checking etc. before summarizing them.
+
+This data was then subject to another plan -- should be be emailed to the user or not? Gemma's opinion on that then triggers the final execution -- to craft the email and send it. 
 
 This is a powerful and flexible architecture that can be used to build a wide variety of agents.
 
